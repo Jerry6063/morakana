@@ -11,3 +11,33 @@ document.querySelectorAll("section").forEach(section => {
     });
   }
 });
+
+// Highlight Ontological Analysis section on hover
+document.querySelectorAll(".ontology").forEach(section => {
+  section.addEventListener("mouseenter", () => {
+    section.style.backgroundColor = "#f0f8ff"; // light blue
+  });
+  section.addEventListener("mouseleave", () => {
+    section.style.backgroundColor = "#ffffff"; // reset to white
+  });
+});
+
+// Highlight Contextual Analysis section on hover
+document.querySelectorAll(".contextual").forEach(section => {
+  section.addEventListener("mouseenter", () => {
+    section.style.backgroundColor = "#f0faff";
+  });
+  section.addEventListener("mouseleave", () => {
+    section.style.backgroundColor = "#e9f2f9";
+  });
+});
+
+// Highlight Visual Analysis section on hover
+document.querySelectorAll(".visual-analysis").forEach(section => {
+  section.addEventListener("mouseenter", () => {
+    section.style.backgroundColor = "#fff0e6"; // light peach highlight
+  });
+  section.addEventListener("mouseleave", () => {
+    section.style.backgroundColor = "#fff7f0"; // original background
+  });
+});

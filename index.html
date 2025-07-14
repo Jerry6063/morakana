@@ -5,32 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Inoculated – Precedent Study</title>
   <link rel="stylesheet" href="style.css" /> <!-- Link to external stylesheet -->
+  <style>
+    section.project-images .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 15px;
+    }
+
+    section.project-images img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  object-fit: contain;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+  </style>
 </head>
 <body>
   <!-- Header section with title and author -->
   <header>
-    <h1>Precedent Study: Inoculated</h1>
-    <p>By Marija Avramović + Sam Jacob</p>
+    <h1>Precedent Study: Symbiosis.live</h1>
+    <p>By Tiri Kananuruk (Thailand) + Sebastián Morales Prado (Mexico)</p>
   </header>
 
   <!-- Project Datasheet section -->
   <section>
-    <h2>Project Datasheet</h2>
-    <ul>
-      <li><strong>Title:</strong> Inoculated</li>
-      <li><strong>Author:</strong> Marija Avramović + Sam Jacob</li>
-      <li><strong>Year:</strong> 2023</li>
-      <li><strong>Format:</strong> Installation / Speculative Design</li>
-      <li><strong>Audience:</strong> Design researchers, curators, public audience</li>
-    </ul>
-  </section>
+  <h2>Project Datasheet</h2>
+  <ul>
+    <li><strong>Title:</strong> Symbiosis.live</li>
+    <li><strong>Author:</strong> Tiri Kananuruk + Sebastián Morales Prado</li>
+    <li><strong>Year:</strong> 2022</li>
+    <li><strong>Format:</strong> Installation / Bio-digital System</li>
+    <li><strong>Audience:</strong> Media artists, researchers, public observers, networked agents (bots)</li>
+  </ul>
+</section>
 
   <!-- Project Image section -->
-  <section>
-    <h2>Project Images</h2>
-    <img src="images/3e4335ba3a8cfcd87b4a1cdd114e2e5.png" alt="Inoculated View 1" />
-    <img src="images/4957a22a5900a787088d3d7c10c392e.png" alt="Inoculated View 2" />
-  </section>
+  <section class="project-images">
+  <h2>Project Images</h2>
+  <div class="image-grid">
+    <img src="images/220330_GMAP62.jpg" alt="Symbiosis.live - Image 1" />
+    <img src="images/cells-in-server.gif" alt="Symbiosis.live - Image 2" />
+    <img src="images/symbiosis_Microscope_1200.jpg" alt="Symbiosis.live - Image 3" />
+  </div>
+</section>
 
   <!-- Author’s Writings section -->
   <section>
@@ -45,6 +66,63 @@
     <h2>Critical Reception</h2>
     <ul>
       <li>No third-party articles available yet.</li>
+    </ul>
+  </section>
+
+  <!-- Ontological Analysis section -->
+  <section class="ontology">
+    <h2>Ontological Analysis</h2>
+    <p><strong>System Diagram:</strong></p>
+    <pre class="system-diagram">
+[bots] ↔ [Estuary Server] ↔ [Signal Cables] ↔ [Bioreactor + Cells]
+ ↑                                       ↓
+ | Human observers via screen/display       | Feedback loop
+    </pre>
+    <p><strong>Ontology Matrix:</strong></p>
+    <ul class="ontology-matrix">
+      <li><strong>Entities:</strong> bots, cells</li>
+      <li><strong>Structures:</strong> servers, bioreactor, microscope, cables</li>
+      <li><strong>Spaces:</strong> physical gallery, digital server space</li>
+      <li><strong>Relations:</strong> bots → server → cells → feedback → server</li>
+      <li><strong>Time:</strong> real-time bot actions, delayed biological response</li>
+      <li><strong>Concepts:</strong> symbiosis, blurred definitions of life, techno-nature entanglement</li>
+    </ul>
+  </section>
+
+  <!-- Historical & Contextual Analysis section -->
+  <section class="contextual">
+    <h2>Historical & Contextual Analysis</h2>
+    <p><strong>Timeframe & Exhibition Context:</strong></p>
+    <pre class="context-block">
+Symbiosis.live was developed in 2022 during a period of increasing global attention to posthuman ecologies,
+digital-bio entanglement, and the role of automation in defining "life." It was exhibited at the
+Gwangju Art & Media Center (South Korea), engaging with an audience familiar with media arts,
+bio-art, and critical technological practices.
+Source: <a href="https://morakana.com/work/symbiosis-live" target="_blank">morakana.com</a>
+    </pre>
+    <p><strong>Authors’ Motivation:</strong></p>
+    <ul class="context-list">
+      <li>Tiri Kananuruk explores voice, interface, and embodied perception through technological filters. (<a href="https://www.manacontemporary.com/editorial/tiri-kananuruk" target="_blank">Mana Contemporary</a>)</li>
+      <li>Sebastián Morales questions the agency of bots and networks, treating internet traffic as organic behavior. (<a href="https://www.manacontemporary.com/editorial/the-art-of-sebastian-morales-prado" target="_blank">Mana Contemporary</a>)</li>
+    </ul>
+    <p><strong>Contextual Drivers:</strong></p>
+    <ul class="context-list">
+      <li>Rise of bio-art and hybrid media systems in contemporary critical art. (<a href="https://experimenta.org/artworks/biomess/" target="_blank">Experimenta Biomess</a>)</li>
+      <li>Public concern about AI, surveillance, and human/non-human boundaries. (<a href="https://sfpc.study/sessions/networked-performance/networked-performance" target="_blank">SFPC Networked Performance</a>)</li>
+      <li>Post-COVID reflections on interaction, networks, and remote perception. (<a href="https://dl.acm.org/doi/10.1145/3613904.3642339" target="_blank">ACM Bioart Paper</a>)</li>
+    </ul>
+  </section>
+
+  <!-- Visual & Aesthetic Representation section -->
+  <section class="visual-analysis">
+    <h2>Visual & Aesthetic Representation</h2>
+    <ul class="visual-list">
+      <li><strong>Physical‑digital lab aesthetic:</strong> microscope, bioreactor, cables, screens — evoking scientific rigour. (<a href="https://morakana.com/work/symbiosis-live" target="_blank">morakana.com</a>)</li>
+      <li><strong>Continuation of biomess style:</strong> transparent vessels & living media in gallery context. (<a href="https://experimenta.org/artworks/biomess/" target="_blank">Experimenta</a>)</li>
+      <li><strong>Microscopy visuals:</strong> high-magnification imagery as abstract art form. (<a href="https://time.com/4279508/art-carl-struwe/" target="_blank">TIME on Carl Strüwe</a>)</li>
+      <li><strong>Responsive interface lighting:</strong> bots’ interactions visualized via light/signal cues. (<a href="https://sfpc.study/sessions/networked-performance/networked-performance" target="_blank">SFPC Networked Performance</a>)</li>
+      <li><strong>Fluid materiality:</strong> transparency, bubbles, flows echo soft robotics aesthetics. (<a href="https://www.frontiersin.org/articles/10.3389/frobt.2024.1472051/full" target="_blank">Frontiers in Robotics</a>)</li>
+      <li><strong>Situates within bioart community:</strong> echoes SymbioticA tradition & cross-media labs. (<a href="https://visualsymbiosis.com/about.html" target="_blank">Visual Symbiosis</a>)</li>
     </ul>
   </section>
 
