@@ -73,7 +73,6 @@ a:hover {
 }
 
 /* --- Ontological Analysis Specific Styles --- */
-
 section.ontology {
   background-color: #ffffff;
   border-left: 4px solid #007acc;
@@ -138,4 +137,21 @@ section.visual-analysis {
 .visual-list li {
   margin-bottom: 8px;
   line-height: 1.6;
+}
+
+/* --- Full-width Frame Image --- */
+section.full-width-image {
+  margin-top: 40px;
+  text-align: center;
+}
+
+section.full-width-image .image-container {
+  overflow-x: auto; /* 横向滚动查看超宽图片 */
+}
+
+section.full-width-image img {
+  display: block;
+  width: 100%;   /* 填满页面宽度 */
+  height: auto;
+  max-width: 100%;
 }
